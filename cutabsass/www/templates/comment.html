@@ -1,0 +1,32 @@
+<ion-view >
+  <ion-content has-bouncing="true" class="has-header has-footer"  >
+    <div class="list" ng-repeat="comment in data">
+      <div class='item item-avatar-left '>
+        <img src="{{comment.comment_avatar}}" alt=""/>
+        <h2>{{comment.comment_first_name}} {{comment.comment_last_name}}</h2>
+        <p>
+          <small am-time-ago="comment.commented_on"></small>
+        </p>
+        <div class='outline item-text-wrap'>
+			    <p ng-show="comment.comment">{{comment.comment}}</p>
+			    <img ng-show="comment.commentImg"  class="full-image"  src="{{comment.commentImg}}"/>
+		    </div>             
+      </div>
+    </div>
+  </ion-content>
+  <ion-footer-bar class="bar-stable item-input-inset message-footer">
+    <div class="footer-btn-wrap">
+      <input type="file" id='CamButton' accept="image/*"  style="display: none;" file-model="newCommentImg" onchange="angular.element(this).scope().checkSendEnable(this.files)"/>
+      <button class="button-icon icon ion-android-camera footer-btn" on-tap='addPhoto()' ></button>
+    </div>
+    <label class="item-input-wrapper">
+      <textarea class="msd-elastic" placeholder='Add Comment' ng-model="newComment.comment" ng-change='checkSendEnable()'>
+      </textarea>
+    </label>
+    <div class="footer-btn-wrap">
+      <button class="button-icon icon ion-android-send footer-btn" on-tap='send()' ng-show='sendEnable'></button>
+    </div>
+  </ion-footer-bar>
+</ion-view>
+
+

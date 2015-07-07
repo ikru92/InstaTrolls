@@ -1,0 +1,39 @@
+i.ion-ios-heart-outline{
+	font-size: 25px;
+}
+i.ion-ios-chatbubble-outline{
+	font-size: 25px;
+}
+i.ion-android-share-alt{
+	font-size: 25px;	
+}
+.ion-ios-paper-outline{
+text-decoration: underline;
+}
+.item-complex .item-content, .item-radio .item-content { 
+    padding: 40px 49px 16px 16px;
+}
+.outline {
+  	overflow: normal;
+  	white-space: normal;
+  	padding: 10px;
+	  margin:15px;
+ 	  border: 1px solid;
+  	background-color:#ade967; 
+  	border-color:#92e235;
+  	border-top-left-radius: 0px;
+	  border-top-right-radius: 10px;
+	  border-bottom-right-radius: 10px;
+	  border-bottom-left-radius: 10px;	
+}
+.bar-footer {
+  overflow: visible !important;
+  height: auto;
+}
+.bar-footer textarea {
+  resize: none;
+  height: 25px;
+}
+input, textarea, .item-input, .item-input-wrapper {
+  background-color: #f4f4f4 !important;
+}

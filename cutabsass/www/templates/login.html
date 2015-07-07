@@ -1,0 +1,20 @@
+<ion-view>
+  <ion-content>
+    <form ng-submit="doLogin()">
+      <div class="list">
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Email</span>
+          <input type="email" ng-model="user.email" placeholder="Email">
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Password</span>
+          <input type="password" ng-model="user.password" placeholder="Password">
+        </label>
+        <label class="item">
+          <p ng-show='message'><font color='red'>Invalid Email or Password</font></p>
+          <button class="button button-block button-positive" type="submit">Log in</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

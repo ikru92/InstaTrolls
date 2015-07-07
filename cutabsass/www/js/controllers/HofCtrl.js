@@ -1,0 +1,1 @@
+angular.module('cuControllers').controller('HofCtrl', function($scope){});

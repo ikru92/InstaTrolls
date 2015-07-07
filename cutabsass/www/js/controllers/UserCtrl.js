@@ -1,0 +1,1 @@
+angular.module('cuControllers').controller('UserCtrl', function($scope){});
